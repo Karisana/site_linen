@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Оформление заказа</title>
+  </head>
+
+  <body class="main-order">
+      <main class="">
+    <section class="section-order">
+      <div class="container">
+        <h3 class="gallery__cart-h">Комплект полуторный Сатин что-то там</h3>
+
+        <div class="gallery__cart-info">
+          <span class="price price-out">5 000</span>
+          <span class="price">2 500</span>
+          <span class="price">₽</span>
+        </div>
+
+
+        <div class="question">
+          <form
+            class="form form-order"
+            action="https://jsonplaceholder.typicode.com/posts"
+            autocomplete="on"
+            method="POST"
+          >
+            <input
+              class="form-input form-input-order"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите ваше имя и фамилию*"
+              required
+            />
+            <input
+              class="form-input form-input-order"
+              type="tel"
+              id="tel"
+              name="E-mail"
+              placeholder="Телефон*"
+              required
+            />
+            <div class="form_bt form_bt-order">
+              <div class="form-ckeck">
+                <input class="form-checkbox" type="checkbox" required />
+                <label>
+                  <span class="form-checkbox-text"
+                    >Согласен на обработку персональных данных</span
+                  >
+                </label>
+              </div>
+              <a class="form-button finish-button" href="/finish.html"
+              >Заказать</a
+            >
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+</main>
+  </body>
+</html>
